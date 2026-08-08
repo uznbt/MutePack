@@ -1,0 +1,45 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "block.piston.in": {
+      "category": "block",
+      "sounds": [ "sounds/silent" ]
+    },
+    "block.piston.out": {
+      "category": "block",
+      "sounds": [ "sounds/silent" ]
+    },
+    "tile.piston.in": {
+      "category": "block",
+      "sounds": [ "sounds/silent" ]
+    },
+    "tile.piston.out": {
+      "category": "block",
+      "sounds": [ "sounds/silent" ]
+    },
+    "mob.chicken.say": {
+      "category": "neutral",
+      "sounds": [ "sounds/silent" ]
+    },
+    "mob.chicken.step": {
+      "category": "neutral",
+      "sounds": [ "sounds/silent" ]
+    },
+    "mob.chicken.hurt": {
+      "category": "neutral",
+      "sounds": [ "sounds/silent" ]
+    },
+    "mob.chicken.death": {
+      "category": "neutral",
+      "sounds": [ "sounds/silent" ]
+    },
+    "mob.chicken.plop": {
+      "category": "neutral",
+      "sounds": [ "sounds/silent" ]
+    },
+    "random.click": {
+      "category": "ui",
+      "sounds": [ "sounds/silent" ]
+    }
+  }
+}

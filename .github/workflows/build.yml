@@ -1,0 +1,26 @@
+name: Build MCPACK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build mcpack
+        run: |
+          # Remove git directory to avoid packing it
+          rm -rf .git
+          rm -rf .github
+          # Zip the contents
+          zip -r MutePack.mcpack *
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: MutePack
+          path: MutePack.mcpack
