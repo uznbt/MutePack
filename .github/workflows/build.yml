@@ -19,8 +19,12 @@ jobs:
           # Zip the contents
           zip -r MutePack.mcpack *
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: MutePack
-          path: MutePack.mcpack
+          tag_name: v1.0.${{ github.run_number }}
+          name: MutePack v1.0.${{ github.run_number }}
+          files: MutePack.mcpack
+          body: "Silences pistons, chickens, droppers, and optimizes chicken rendering for better FPS."
