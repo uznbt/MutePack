@@ -4,14 +4,14 @@
     "name": "Mute Pack",
     "description": "Mutes pistons, chickens, droppers, and optimizes chickens.",
     "uuid": "75d1ed89-624f-468d-b4cf-604e92ccc0cd",
-    "version": [1, 0, 4],
+    "version": [1, 0, 5],
     "min_engine_version": [1, 16, 0]
   },
   "modules": [
     {
       "type": "resources",
       "uuid": "538aaeec-000e-4c3e-90d7-0513b7f9da35",
-      "version": [1, 0, 4]
+      "version": [1, 0, 5]
     }
   ]
 }
